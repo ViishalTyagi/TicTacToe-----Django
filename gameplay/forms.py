@@ -16,4 +16,4 @@ class MoveForm(ModelForm):
                 raise ValidationError("Square is not empty.")
         except IndexError:
             raise ValidationError("Invalid Coordinates")
-        return self.cleaned_data
+        return self.cleaned_data 

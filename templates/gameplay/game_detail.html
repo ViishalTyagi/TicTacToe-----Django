@@ -42,7 +42,7 @@
         <table class="table table-bordered tictactoe-table">
             {% for row in game.board %}
                 <tr>
-                    {% for row in game.board %}
+                    {% for move in row %}
                         <td class="tictactoe-cell">
                             {% if move %}
                                 {% if move.by_first_player %}
